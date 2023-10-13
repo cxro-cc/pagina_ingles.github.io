@@ -95,32 +95,48 @@ h2{
     background-color: rgba(255, 255, 255, 0.74);
 }
 
-
-.container{
-    display: flex;
-    
+.carousel{
+    width: 80vw;
+    max-width: 1100px ;
+    margin: 2rem auto;
+    border: 18px solid;
 }
 
-
-.container4{
-    display: flex;
-   
+.bubbles{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
 }
 
-
-h3{
-    width: 70%;
-    margin: auto;
-
-
-    font-size:30px;
-
-    background:white;
-    box-shadow: 0 0 20px grey;
+.li-figure{
+    border-radius: 50%;
+    border:#000 5px solid;
+    height: 11rem;
+    width: 11rem;
+    display:grid;
+    place-items: center;
     text-align: center;
-    border-radius: 10px;
+    padding: 10px;
+}
 
-    background-color: rgba(250, 235, 215, 0.711);
+.li-figure:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(164, 164, 255);
+}
+
+.li-figure:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.li-figure:nth-child(4){
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.li-figure:nth-child(5){
+    grid-column: 3/4;
 }
 /* Es "te ofrecemos" */
 
@@ -139,18 +155,6 @@ span {
     font-weight: bold;
 }
 
-
-.CONTAINER3{
-  
-
-    font-size:30px;
-
-    text-align: left;
-    background-color: rgba(250, 235, 215, 0.711);
-    box-shadow: 0 0 20px grey;
-    width:100%;
-    margin: auto;
-}
 
 h4{
     width: 100%;
