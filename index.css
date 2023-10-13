@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200&family=Montserrat:wght@700&display=swap');
+
+:root{
+    --light-text: #fff
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif; 
+}
+
+h1{
+    color:var(--light-text);
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+    text-rendering:optimizeLegibility;
+    text-shadow: #000 0 0 5px; 
+}
+
+/* bienvenidos.. */
+
+.section{
+    background: linear-gradient(30deg, rgba(17, 242, 227, 0.364) 35%, rgba(255, 0, 238, 0.551) 100%), url(./images/fondo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+    height: 60vh;
+    display: grid;
+    align-items: center;
+}
+/* wave */
+
+.svg-container{
+    position: absolute;
+	bottom: 0;
+	height: 0;
+	width: 100%;
+	padding-bottom: calc(100% * 45 / 1440);
+}
+
+/* principal */
+
+main{
+    max-width: 1500px;
+    display: grid;
+    margin: auto;
+}
+
+.article {
+    padding: 3rem 10vw;
+}
+
+/* Imagen que divide secciones */
+
+.imgIngles{
+    background: url(images/bridge.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    object-fit: cover;
+    background-attachment: fixed;
+
+    height: 250px;
+    
+    margin-block: 1rem;
+}
+
+/* Listas dentro del texto */
+
+.list-text {
+    padding-left: 5vw;
+}
+
+p b {
+    font-size: 1.2rem;
+    background-color: #dfdfdf;
+}
+
+/* Subtítulos */
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration:underline ;
+}
+
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+
+.container{
+    display: flex;
+    
+}
+
+
+.container4{
+    display: flex;
+   
+}
+
+
+h3{
+    width: 70%;
+    margin: auto;
+
+
+    font-size:30px;
+
+    background:white;
+    box-shadow: 0 0 20px grey;
+    text-align: center;
+    border-radius: 10px;
+
+    background-color: rgba(250, 235, 215, 0.711);
+}
+/* Es "te ofrecemos" */
+
+.list{
+    text-decoration: underline;
+}
+
+
+p{
+    font-size:1.1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.CONTAINER3{
+  
+
+    font-size:30px;
+
+    text-align: left;
+    background-color: rgba(250, 235, 215, 0.711);
+    box-shadow: 0 0 20px grey;
+    width:100%;
+    margin: auto;
+}
+
+h4{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.711);
+}
+
+@media (max-width:400px) {
+    .menu, .menu ul, .menu li{
+        width: 412px;
+    }
+}
