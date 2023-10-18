@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200&family=Montserrat:wght@700&display=swap');
 
 :root{
-    --light-text: #fff
+    --light-text: #fff;
+    --background-cold: rgba(17, 242, 227, 0.364);
+    --background-hot: rgba(255, 0, 238, 0.551);
+    --light-bg: #dfdfdf;
 }
 
 *{
@@ -26,7 +29,7 @@ h1{
 /* bienvenidos.. */
 
 .section{
-    background: linear-gradient(30deg, rgba(17, 242, 227, 0.364) 35%, rgba(255, 0, 238, 0.551) 100%), url(./images/fondo.png);
+    background: linear-gradient(30deg, var(--background-cold) 35%, var(--background-hot) 100%), url(./images/fondo.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -81,7 +84,7 @@ main{
 
 p b {
     font-size: 1.2rem;
-    background-color: #dfdfdf;
+    background-color: var(--light-bg);
 }
 
 /* Subtítulos */
@@ -106,23 +109,23 @@ h2{
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
+    padding-inline: 10rem;
 }
 
 .li-figure{
     border-radius: 50%;
-    border:#000 5px solid;
-    height: 11rem;
-    width: 11rem;
+    height: 10rem;
+    width: 10rem;
     display:grid;
     place-items: center;
     text-align: center;
     padding: 10px;
+    background-color: var(--light-bg);
 }
 
 .li-figure:nth-child(2){
     grid-row: 2/3;
     grid-column: 2/3;
-    background-color: rgb(164, 164, 255);
 }
 
 .li-figure:nth-child(3){
@@ -138,12 +141,6 @@ h2{
 .li-figure:nth-child(5){
     grid-column: 3/4;
 }
-/* Es "te ofrecemos" */
-
-.list{
-    text-decoration: underline;
-}
-
 
 p{
     font-size:1.1rem;
@@ -155,13 +152,22 @@ span {
     font-weight: bold;
 }
 
-
-h4{
-    width: 100%;
-    margin: auto;
+footer{
     text-align: center;
-    background-color: rgba(250, 235, 215, 0.711);
+    padding: 3rem 0 5rem 0;
+    background-image: linear-gradient(45deg, var(--background-cold), var(--background-hot));
 }
+
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover{
+    text-shadow: 0 0 10px green;
+}
+
+
 
 @media (max-width:400px) {
     .menu, .menu ul, .menu li{
